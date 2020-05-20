@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize')
-
+const db = require('../db/index')
 
 class User extends Sequelize.Model {}
 User.init({
@@ -14,7 +14,7 @@ User.init({
             isEmail: true
         }
     }
-}, { sequelize, modelName: 'user' });
+}, { sequelize:db, modelName: 'user' });
 //--
 module.exports = { User};
 
