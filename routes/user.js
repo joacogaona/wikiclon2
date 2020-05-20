@@ -3,7 +3,7 @@ var router = express.Router();
 
 
 router.get('/',function (req, res, next) {
-    console.log('llegamos a user')
+    res.send('llegamos a user')
     next()
   })
 

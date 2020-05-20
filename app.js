@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 
 app.use('/', routes);
 
-db.sync({force:true})
+db.sync({force:false})
 .then(()=>{
 
     app.listen(3000, function(){
